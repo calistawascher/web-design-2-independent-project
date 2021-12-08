@@ -1,0 +1,259 @@
+html {
+  box-sizing: border-box;
+  font-family: mostra-nuova, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+}
+
+a {
+  color: #281710;
+  text-decoration: none;
+  grid-area: "nav";
+}
+
+ul {
+  list-style-type: none;
+  padding-bottom: 2rem;
+}
+
+.header h1 {
+  font-family: mostra-nuova,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  color: #281710;
+  justify-content: center;
+  grid-area:"banner";
+  text-align: center;
+}
+
+header p {
+  font-family: nobel, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+  color: #281710;
+}
+
+
+main p {
+  font-family: nobel, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  font-style: normal;
+  color: #281710;
+}
+
+h2 {
+  font-family:  mostra-nuova, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #281710;
+}
+
+.shopbutton {
+  text-decoration: none;
+  border: 2px solid #281710;
+  padding: .5em;
+  border-radius: .2em;
+  font-family: nobel, sans-serif;
+  font-size: 17px;
+}
+
+.button {
+  display: flex;
+  justify-content: center
+}
+
+.shopbutton:hover {
+  color: #dfb78c;
+  border-color: #dfb78c;
+}
+
+li {
+  font-family: mostra-nuova, sans-serif;
+  font-weight: bold;
+}
+
+section {
+  gap: 6vmin;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase {
+  display: flex;
+  justify-content: center;
+}
+
+.purchasea {
+  text-decoration: none;
+  border: 2px solid #281710;
+  padding: .5em;
+  border-radius: .2em;
+  font-family: nobel, sans-serif;
+  font-size: 17px;
+}
+
+.purchasea:hover {
+  color: #dfb78c;
+  border-color: #dfb78c;
+}
+
+main div {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.heritage p {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutp {
+  font-family: nobel, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.bestsellers {
+  font-size: 30px;
+  font-weight: 700;
+  color: #281710;
+  padding-top: 70px;
+  padding-bottom: none;
+}
+
+.chocolate {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.raspberry {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.danish {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.black {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.earlgrey {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.greentea {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.darkroast {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.mediumroast {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+.decaf {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.location {
+  padding-top: 2rem;
+}
+
+.map p {
+  font-weight: Regular;
+  color: #281710;
+  text-align: center;
+}
+
+.abouth2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.aboutp {
+  padding-top: 0;
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "heritage heritage"
+    "beans tea";
+  }
+
+  .heritage {
+    grid-area: heritage;
+  }
+
+  .beans {
+    grid-area: beans;
+  }
+
+  .tea {
+    grid-area: tea;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6vmin;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
