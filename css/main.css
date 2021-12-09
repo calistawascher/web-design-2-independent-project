@@ -16,9 +16,31 @@ body {
 }
 
 a {
-  color: #281710;
+  color: #6b544c;
   text-decoration: none;
-  grid-area: "nav";
+}
+
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em 0.75em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+.nav a:hover {
+  color: #dfb78c;
 }
 
 ul {
@@ -27,13 +49,12 @@ ul {
 }
 
 .header h1 {
-  font-family: mostra-nuova,sans-serif;
-  font-weight: 700;
+  font-family: mostra-nuova, sans-serif;
+  font-weight: bold;
   font-style: normal;
-  font-size: 35px;
-  color: #281710;
+  font-size: 3rem;
+  color: #6b544c;
   justify-content: center;
-  grid-area:"banner";
   text-align: center;
 }
 
@@ -41,39 +62,39 @@ header p {
   font-family: nobel, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 25px;
+  font-size: 2rem;
   text-align: center;
-  color: #281710;
+  color: #6b544c;
 }
-
 
 main p {
   font-family: nobel, sans-serif;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 1rem;
   font-style: normal;
-  color: #281710;
+  color: #6b544c;
 }
 
 h2 {
-  font-family:  mostra-nuova, sans-serif;
-  font-weight: 700;
+  font-family: mostra-nuova, sans-serif;
+  font-weight: bold;
   text-align: center;
-  color: #281710;
+  color: #6b544c;
 }
 
 .shopbutton {
   text-decoration: none;
-  border: 2px solid #281710;
+  border: 2px solid #6b544c;
   padding: .5em;
   border-radius: .2em;
   font-family: nobel, sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
+  color: #6b544c;
 }
 
 .button {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .shopbutton:hover {
@@ -84,6 +105,7 @@ h2 {
 li {
   font-family: mostra-nuova, sans-serif;
   font-weight: bold;
+  color: #6b544c;
 }
 
 section {
@@ -102,11 +124,11 @@ article {
 
 .purchasea {
   text-decoration: none;
-  border: 2px solid #281710;
+  border: 2px solid #6b544c;
   padding: .5em;
   border-radius: .2em;
   font-family: nobel, sans-serif;
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 .purchasea:hover {
@@ -131,15 +153,16 @@ main div {
 .aboutp {
   font-family: nobel, sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 1.4rem;
+  padding-top: 0;
 }
 
 .bestsellers {
-  font-size: 30px;
-  font-weight: 700;
-  color: #281710;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6b544c;
   padding-top: 70px;
-  padding-bottom: none;
+  padding-bottom: 0;
 }
 
 .chocolate {
@@ -191,6 +214,7 @@ img {
   height: 300px;
   object-fit: cover;
   object-position: center;
+  padding-bottom: .5rem;
 }
 
 .location {
@@ -198,8 +222,8 @@ img {
 }
 
 .map p {
-  font-weight: Regular;
-  color: #281710;
+  font-weight: normal;
+  color: #6b544c;
   text-align: center;
 }
 
@@ -208,13 +232,29 @@ img {
   margin-bottom: 0;
 }
 
-.aboutp {
-  padding-top: 0;
+footer p {
+  color: #6b544c;
+  text-align: center;
+  padding-top: 2rem;
 }
 
+.nav {
+  opacity: 0;
+}
 
 @media only screen and (min-width: 38em) {
 
+  .nav {
+    opacity: 100;
+    text-align: right;
+  }
+
+  li {
+    list-style-type: none;
+    display:inline-block;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
