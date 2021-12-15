@@ -20,7 +20,6 @@ a {
   text-decoration: none;
 }
 
-
 .skip-links {
   margin: 0;
   padding: 0;
@@ -265,16 +264,17 @@ footer p {
 
   li {
     list-style-type: none;
-    display:inline-block;
+    display: inline-block;
     padding-right: 2rem;
     font-size: 1.3rem;
   }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "heritage heritage"
-    "beans tea";
+      "heritage heritage"
+      "beans tea";
   }
 
   .heritage {
