@@ -242,6 +242,20 @@ footer p {
   opacity: 0;
 }
 
+.hours h3 {
+  color: #6b544c;
+  text-align: center;
+}
+
+.connected h3 {
+  color: #6b544c;
+  text-align: center;
+}
+
+.hours .time {
+  padding-top: 0;
+}
+
 @media only screen and (min-width: 38em) {
 
   .nav {
