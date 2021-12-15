@@ -261,7 +261,32 @@ header img {
   padding-top: .5rem;
 }
 
+.connected img {
+  width: 5%;
+  height: auto;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socials img {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
 @media only screen and (min-width: 38em) {
+
+  .connected img {
+    width: 2%;
+    height: auto;
+  }
+
+  .socials img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
   header img {
     width: 5%;
