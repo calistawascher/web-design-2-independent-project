@@ -277,7 +277,25 @@ header img {
   margin-right: .5rem;
 }
 
+.hamburger {
+  float: right;
+  width: 8%;
+  height: auto;
+}
+
+#nav li {
+  display: flex;
+  float: right;
+  position: relative;
+  bottom: 80px;
+  left: 80px;
+}
+
 @media only screen and (min-width: 38em) {
+
+  .hamburger {
+  opacity: 0;
+  }
 
   .connected img {
     width: 2%;
